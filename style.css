@@ -35,7 +35,7 @@ body {
   h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
-    color: #4aaaa5;
+    color: #40484f;
   }
   
   h1 {
@@ -76,7 +76,7 @@ body {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background: #40484f;
   }
   
   nav {
@@ -109,14 +109,14 @@ body {
     color: #cccccc;
     text-align: center;
     background: #666666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid #40484f;
     height: 50px;
   }
   
   h3, h2 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-bottom: 15px;
-    line-height: 22px;
+    line-height: 15px;
     border-bottom: 2px solid #eeeeee;
   }
   
@@ -146,6 +146,20 @@ body {
     margin: 20px 0 25px;
     overflow: auto;
   }
+
+  #word {
+    width: 274px;
+    height: 182.66px;
+  }
+  #giphy {
+    width: 274px;
+    height: 182.66px;
+  }
+
+  #project {
+    width: 274px;
+    height: 182.66px;
+  }
   
   .work:nth-child(even) {
     margin-right: 40px;
@@ -159,17 +173,18 @@ body {
   
   .work h3 {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     width: 100%;
-    padding: 15px;
+    padding: 5px;
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
     color: #ffffff;
     text-align: center;
-    background: #4aaaa5;
+    background: #40484f;
     border-bottom: 0;
   }
+
   
   .auth-image {
     float: left;
@@ -215,7 +230,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     cursor: pointer;
-    background: #4aaaa5;
+    background: #40484f;
     border: 0 none;
   }
 
