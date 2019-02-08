@@ -1,32 +1,38 @@
-  // Initialize Firebase
-  var config = {
+// Initialize Firebase
+var config = {
     apiKey: "AIzaSyB8KOqumJIi0sijeajjnzT8IM7VFoh6A4I",
     authDomain: "portfoliocontactpage-51bfe.firebaseapp.com",
     databaseURL: "https://portfoliocontactpage-51bfe.firebaseio.com",
     projectId: "portfoliocontactpage-51bfe",
     storageBucket: "",
     messagingSenderId: "54254190498"
-  };
-  firebase.initializeApp(config);
-  var database = firebase.database();
+};
+firebase.initializeApp(config);
+var database = firebase.database();
+
+var name = "";
+var email = "";
+var message = "";
 
 
-  $("submitBtn").on("click", function(event){
-      event.preventDefault();
+$("#submitBtn").on("click", function (event) {
+    event.preventDefault();
 
-      name = $("#userName").val().trim();
-      email = $("#userEmail").val().trim();
-      message = $("#message").val().trim();
+    name = $("#userName").val().trim();
+    email = $("#userEmail").val().trim();
+    message = $("#message").val().trim();
 
-      database.ref().push({
-          name: name,
-          email, email,
-          message, message
-      })
-  })
+    database.ref().push({
+        name: name,
+        email: email,
+        message: message
+    });
+    alert("Thanks for your message!")
+});
 
-  database.ref().on("child_added", function(childSnapshot){
-      var name = childSnapshot.val().name;
-      var email = childSnapshot.val().email;
-      var message = childSnapshot.val().message;
-  })
+database.ref().on("child_added", function (childSnapshot) {
+    var name = childSnapshot.val().name;
+    var email = childSnapshot.val().email;
+    var message = childSnapshot.val().message;
+})
+
